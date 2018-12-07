@@ -1,0 +1,123 @@
+---
+title: "ICB 2018 - Final Exam in R"
+output: pdf_document
+---
+
+You have up to two hours to complete the questions below. Feel free to use any of your notes, cheat sheets, or the internet to complete the exam. Be sure to comment your code. If you get stuck on a particular question, for partial credit provide pseudo-code. Turn your answers in on Sakai using the provided text file template.
+
+&nbsp;
+
+1\. Write a regular expression, and only the regular expression, for each of the three descriptions below:
+
+a. a DNA sequence beginning with AAATTT and containing 10-15 codons (triplets of DNA bases), including the initial AAATTT
+
+&nbsp;
+
+&nbsp;
+
+b. any of the words cot, rot, hot, shot, short, fort
+
+&nbsp;
+
+&nbsp;
+
+2\. The directory `home` contains three directories (`records`, `poems`, `photos`). Both `records` and `poems` contain a set of `.txt` files that you will use for the tasks described below.
+
+a. Assuming you begin in the `home` directory on a Unix system, provide the Unix code required to make a new directory `archive` in the `records` directory, copy all `.txt` files from `records` to `archive`, and delete any files with a filename starting with 'old' from the `records` directory.
+
+&nbsp;
+
+&nbsp;
+
+b. Assuming you begin in the `home` directory on a Unix system, provide the Unix code required to append your initials to the beginning of the filename for all `.txt` files in the `poems` directory. Use a for-loop to accomplish this task.
+
+&nbsp;
+
+&nbsp;
+
+3\. The information below is contained in the file `lunch.txt`. Provide Unix code needed to generate a new file (`Danslunch.txt`) that contains only entries for dan that are sorted by menu item and changes all occurrences of dan to Dan.
+
+dan &nbsp; &nbsp; hamburger
+
+alice &nbsp; tacos
+
+dan &nbsp; &nbsp; waffles
+
+dan &nbsp; &nbsp; salad
+
+ralph &nbsp; pizza
+
+alice &nbsp; burrito
+
+&nbsp;
+
+&nbsp;
+
+\pagebreak
+
+4\. Earlier in the semester you coded a guessing game choosing an integer between 1 and 100. A non-functional version of R code for this task is below and provided in a script called `guessing_game.R`. Fix any errors in the code and adjust the code so that the player only has 5 attempts to guess the correct answer or they lose.
+
+```{r, eval=FALSE}
+# randomly draw an integer between 1 and 100
+myNumber=sample(x=1:50,size=1)
+
+# create a while loop that runs until we indicate the guesser is correct
+correct=0
+while(correct==0){
+  # prompt the user for a guess
+  guess=readline(promp="Guess:")
+  
+  if(guess<theNumber)
+    print("Higher")
+  else{
+    print("Lower")
+  }
+  if(guess=myNumber){
+    print("Correct")
+    correct=1
+  }
+}
+```
+
+
+&nbsp;
+
+&nbsp;
+
+
+
+5\. Write a function in R that takes a vector as an argument and returns the sum of even numbers contained in the vector. Remember `%%` will return the remainder of integer division. Also be sure to write your function to handle the case where the vector supplied contains no even numbers.
+
+&nbsp;
+
+&nbsp;
+
+6\. Assume that `y` has an even number of entries and that the first half of `y` come from Group 1 and the second half of `y` come from Group 2. These data are available in `y.csv`. Provide the R code to generate a barplot of the means of `y` for Group 1 and Group 2.
+
+\pagebreak
+
+7\. What changes to the weekly schedule (e.g. 75 minute lectures, 3 hour tutorial sections on Friday) would improve this course?
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+8\. A topic that I wished was covered in more detail was...
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+9\. A topic that I wished was covered in less detail was...
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+10\. Did the group project solidify or advance your understanding of topics covered in class? How could this activity be improved? Would you replace this activity with something else instead?
